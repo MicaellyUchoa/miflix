@@ -1,21 +1,16 @@
-import React from 'react';
-import { FooterBase } from './styles';
-
+import React from "react";
+import { FooterBase } from "./styles";
+import logo from "../../assets/images/logo.png";
 function Footer() {
-  return (
-    <FooterBase>
-      <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
-      </a>
-      <p>
-        Orgulhosamente criado durante a
-        {' '}
-        <a href="https://www.alura.com.br/">
-          Imersão React da Alura
-        </a>
-      </p>
-    </FooterBase>
-  );
+    return (
+        <FooterBase>
+            <a href="https://github.com/MicaellyUchoa" target="_blank" rel="noopener noreferrer">
+                <img src={logo} height="40" alt="Author" />
+
+                <p>Orgulhosamente criado por Micaelly Uchoa</p>
+            </a>
+        </FooterBase>
+    );
 }
 
 export default Footer;
