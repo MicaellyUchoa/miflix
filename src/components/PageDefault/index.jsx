@@ -2,7 +2,7 @@ import React from "react";
 import Menu from "../Menu";
 import Footer from "../Footer";
 import styled from "styled-components";
-import { Router, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 const Main = styled.main`
     background-color: var(--black);
     color: var(--white);
@@ -11,8 +11,6 @@ const Main = styled.main`
 
 function PageDefault({ children }) {
     const router = new useHistory();
-    console.log();
-
     return (
         <>
             <Menu />
